@@ -1,0 +1,121 @@
+﻿@model IEnumerable<JobShop.Models.Employer>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Index.css" />
+</head>
+<body>
+    <p>
+        <a href="@Url.Action("Create", "Employer")" class="btn btn-default"><i class="fa fa-plus"></i>Create New</a>
+    </p>
+    @*<div style="margin-bottom:250px">*@
+        <table class="table table-stripped ">
+            <thead class="table-heading">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    @*<th>
+                        @Html.DisplayNameFor(model => model.EmailAdress)
+                    </th>*@
+                    <th>
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Age)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HireDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Designation)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salary)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PersonalWebsite)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Department)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Company)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Photo)
+                    </th>
+
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    @*<td>
+                        @Html.DisplayFor(modelItem => item.EmailAdress)
+                    </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Age)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HireDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Designation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PersonalWebsite)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company)
+                    </td>
+                    @*<td>
+                        @Html.DisplayFor(modelItem => item.Photo)
+                    </td>*@
+                    <td>
+                        <img src="~/employers/@Html.DisplayFor(Model=>item.Photo)"
+                             class="thumbnail" style="width:48px; height:48px" />
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.EmployerId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.EmployerId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.EmployerId })
+                    </td>
+                </tr>
+            }
+
+        </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<JobShop.Models.Job>
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-default" style="padding:15px; margin-bottom:10px;">
+    <h1 class="panel-heading">Search Results</h1>
+
+    <div class="row">
+        @foreach (var subitem in Model)
+        {
+            <div class="col-md-3 thumbnail" style="margin-left:20px;margin-bottom:-10px;height:350px;">
+                <img src="~/uploads/@subitem.jobImage" style="width:200px;height:200px;" />
+                <h3>@Html.DisplayFor(modelItem => subitem.jobTitle)</h3>
+                <h5>@Html.DisplayFor(modelItem => subitem.jobContent)</h5>
+                <h6>@Html.DisplayFor(modelItem => subitem.Salary)</h6>
+                <h7>@Html.DisplayFor(modelItem => subitem.City)</h7>
+                @Html.ActionLink("Details", "Details", new { jobId = subitem.id }, new { @class = "btn btn-primary" })
+            </div>
+
+
+        }
+    </div>
+</div>

@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Client Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    @*<!-- web font -->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+        <link href="//fonts.googleapis.com/css?family=Amita:400,700" rel="stylesheet">
+        <!-- //web font -->*@
+
+    <link href="~/Content/Dashboard/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Dashboard/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/Dashboard/Scripts/jquery-1.11.1.js"></script>
+    <script src="~/Content/Dashboard/bootstrap/js/bootstrap.min.js"></script>
+    <link href="~/Content/Dashboard/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div>
+
+        <div class="container" style="font-size:20px">
+
+            <div class="logo col-sm-12 text-center col-md-12 ">
+                <img alt="" src="~/Content/Dashboard/Images/dotnetsai.png" />
+            </div>
+            <div class="clearfix"></div>
+            <fieldset>
+
+                <legend>Admin Dashboard</legend>
+
+                <div class="panel">
+
+                    <div class="panel-body">
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-edit"></span>
+                            @Html.ActionLink("Upload Profile Photo", "Profile", "Manage")
+                        </div>
+
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-list"></span>
+                            @Html.ActionLink("Create Job catagories", "Create", "Categories")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Create Job Post", "Create", "Jobs")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("ResumesDatabase", "Index", "Download")
+                        </div>
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-list"></span>
+                            @Html.ActionLink("Create Blog catagories", "Create", "BlogCategories")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Create Blog Post", "Create", "Jobs")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-list"></span>
+                            @Html.ActionLink("View Feedbacks", "Index", "Feedback")
+                        </div>
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Job Posts Dashboard", "Index", "Jobs")
+                        </div>
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Job catagories Dashboard", "Index", "Categories")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("View job application forms", "Index", "UploadCv")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-list"></span>
+                            @Html.ActionLink("View ALL Assighned Roles", "Index", "Role")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Resumes Database of all users", "Index", "Download")
+                        </div>
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-home"></span>
+                            @Html.ActionLink("Registered Employers", "Index", "Employer")
+                        </div>
+
+
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            @Html.ActionLink(" Admin MailBox", "Index", "Contact")
+                        </div>
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-floppy-disk"></span>
+                            @Html.ActionLink(" Employer Mail Box", "GetJobsByPublisher", "Home2")
+                        </div>
+                        
+
+                        <div class="col-md-3 dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            @Html.ActionLink("Create Role", "Create", "Role")
+                        </div>
+
+
+                        <div class="col-md-3  dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-list"></span>
+                            @Html.ActionLink("List of all User", "AllRegisterUserDetails", "Account")
+                        </div>
+
+                        <div class="col-md-3  dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                            @Html.ActionLink("Create Employers ", "Create", "Employer")
+                        </div>
+
+                        <div class="col-md-3  dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                            @Html.ActionLink("View Employers ", "Index", "Employer")
+                        </div>
+
+
+                        <div class="col-md-3  dashboard-icon col-sm-3">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                            <a href="http://localhost:20320/Employer/Index?Title='TopEmployer'"> Top Employer</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </fieldset>
+
+        </div>
+     </div>
+  </body>
+</html>

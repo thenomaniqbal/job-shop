@@ -1,0 +1,42 @@
+﻿@model JobShop.Models.Job
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Details</h2>
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.categoryName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.categoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.jobTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobContent)
+        </dt>
+        <dd>
+            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.jobContent).ToString()))
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobImage)
+        </dt>
+        <dd>
+            <img src="~/uploads/@Html.DisplayFor(Model=>Model.jobImage)"
+                 class="thumbnail" style="width:48px; height:48px" />
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

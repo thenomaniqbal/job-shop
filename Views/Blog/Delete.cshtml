@@ -1,0 +1,88 @@
+﻿@model JobShop.Models.Blog
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogCategory.CatTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogCategory.CatTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogerEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogerEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

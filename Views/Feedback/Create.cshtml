@@ -1,0 +1,51 @@
+﻿@model JobShop.Models.FeedbackViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FeedBack-JobShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Elegant Feedback Form  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //custom-theme -->
+    <link href="~/Content/feedback/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body class="agileits_w3layouts">
+    <h1 class="agile_head text-center">Thank You For Being Here</h1>
+    <div class="w3layouts_main wrap">
+        <h3>Please help us to serve you better by taking a couple of minutes. </h3>
+        @using (Html.BeginForm("Create", "Feedback", FormMethod.Post, new { @class = "agile_form" }))
+        {
+            <h2>How satisfied were you with our Service?</h2>
+            <ul class="agile_info_select">
+                @for (int i = 0; i < Model.Answers.Count; i++)
+                {
+                    <li>
+                        @Html.RadioButtonFor(m => Model.Select, Model.Answers[i].ID, new { @id = i })
+                        <label for="@i">@Model.Answers[i].Name </label>
+                        <div class="@Model.Answers[i].Css"></div>
+
+                    </li>
+
+                }
+            </ul>
+            <h2>If you have specific feedback, please write to us...</h2>
+            @Html.TextAreaFor(m => m.Comment, new { @class = "w3l_summary", @placeholder = "Additional Comments" })
+            @Html.TextBoxFor(m => m.FullName, new { @placeholder = "Your Name" })
+            @Html.TextBoxFor(m => m.Email, new { @placeholder = "Your Email" })
+            <input type="submit" value="send" class="agileinfo" />
+
+        }
+    </div>
+    <div class="agileits_copyright text-center">
+        <p>© 2018.JobShop All rights reserved | Designed by Noman Iqbal<a href="#" class="w3_agile">*</a></p>
+    </div>
+</body>
+</html>
+

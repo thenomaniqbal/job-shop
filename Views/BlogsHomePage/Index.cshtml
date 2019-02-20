@@ -1,0 +1,79 @@
+﻿@model IEnumerable<JobShop.Models.BlogCategory>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Bootstrap Blog Template">
+    <meta name="author" content="Vijaya Anand">
+    <title>Home</title>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Custom Bootstrap CSS file -->
+    <link href="~/Content/Blog Home Page/bootstrap-custom/css/custom.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Blog Home Page/blog.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 style="text-align:center">JobShop Blogs</h1>
+    <h1 style="text-align:center">Latest Posts</h1>
+    <!-- Body -->
+    <div class="container" style="width:100%;background-color:lemonchiffon">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+
+                <div class="col-lg-10" style="margin-left:80px">
+                    @foreach (var subitem in item.Blogs)
+                    {
+
+
+                        <article>
+                            <h2>@Html.DisplayFor(modelItem => subitem.BlogTitle)<a href="singlepost.html"></a></h2>
+                            <h3>@Html.DisplayFor(modelItem => subitem.DateCreated)</h3>
+                            <div class="row">
+                                <div class="group1 col-sm-6 col-md-6">
+                                    <h4>@Html.DisplayFor(modelItem => subitem.BlogerName)</h4>
+                                </div>
+                                <div class="group2 col-sm-6 col-md-6">
+                                    <span class="glyphicon glyphicon-copyright-mark"> </span>
+                                    <h5>@Html.DisplayFor(modelItem => subitem.BlogerEmailId)</h5>
+                                    <a href="singlepost.html#comments"></a>
+                                    &nbsp;&nbsp;<span class="glyphicon glyphicon-"></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div @*class="col-md-3 thumbnail"*@ @*style="margin-left:20px;margin-bottom:-10px;height:350px;"*@>
+                                <img class="img-responsive" src="~/blogs/@subitem.BlogImage" @*style="width:200px;height:200px;"*@ />
+
+                                <br />
+                                <p class="lead"> @Html.DisplayFor(modelItem => subitem.BlogContent)</p>
+
+
+                                @Html.ActionLink("Details", "Details", new { blogId = subitem.id }, new { @class = "btn btn-primary" })
+                                <p class="text-right">
+
+                                    @*<a href="@Html.ActionLink("continue reading...", "Details", new { blogId = subitem.id }, new { @class = "btn btn-primary" })">
+            </a>*@
+                                </p>
+                                <hr>
+                            </div>
+                        </article>
+
+
+
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+</body>
+    </html>
+
+
+

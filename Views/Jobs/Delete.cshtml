@@ -1,0 +1,48 @@
+﻿@model JobShop.Models.Job
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Delete Job</h2>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.categoryName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.categoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.jobTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobContent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.jobContent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.jobImage)
+        </dt>
+        <dd>
+            <img src="~/uploads/@Html.DisplayFor(Model=>Model.jobImage)"
+                 class="thumbnail" style="width:48px; height:48px" />
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

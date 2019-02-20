@@ -1,0 +1,51 @@
+﻿@model IEnumerable<JobShop.Models.Category>
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Index.css" />
+</head>
+<body>
+    <h2>List of Job Categories</h2>
+
+
+    <p>
+        <a href="@Url.Action("Create", "Categories")" class="btn btn-default"><i class="fa fa-plus"></i>Create New Category</a>
+    </p>
+
+    <table class="table table-stripped ">
+        <thead class="table-heading">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.categoryName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.categoryDescription)
+                </th>
+
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.categoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.categoryDescription)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

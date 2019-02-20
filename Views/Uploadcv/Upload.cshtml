@@ -1,0 +1,89 @@
+﻿@model JobShop.Models.Cv
+
+@{
+    ViewBag.Title = "Upload Job Application Form Here!";
+}
+
+<h2>Job Applications</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Upload Job Application Form Here!</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.FileName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                @Html.EditorFor(model => model.FileName, new { htmlAttributes = new { @class = "form-control",name="FileName" } })
+                @Html.ValidationMessageFor(model => model.FileName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.file, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input name="upload" type="file" id="files" multiple="multiple" />
+                @Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="upload" value="Upload" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+
+
+<script>
+    $body = $("body");
+    $(document).on({
+        ajaxStart: function () { $body.addClass("loading"); },
+        ajaxStop: function () { $body.removeClass("loading"); }
+    });
+
+    $(document).ready(function () {
+        $("#upload").click(function () {
+            var data = new FormData();
+
+            //Add the Multiple selected files into the data object
+            var files = $("#files").get(0).files;
+            for (i = 0; i < files.length; i++) {
+                data.append("files" + i, files[i]);
+            }
+
+            //Post the data (files) to the server
+            if (files.length > 0) {
+                $.ajax({
+                    type: 'POST',
+                    url: "@Url.Action("Upload")",
+                    data: data,
+                    contentType: false,
+                    processData: false,
+                    success: function (data) {
+                        alert("Successfully Uploaded!");
+                    },
+                    error: function () {
+                        alert("An error occurred!");
+                    },
+                });
+            }
+        });
+    });
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

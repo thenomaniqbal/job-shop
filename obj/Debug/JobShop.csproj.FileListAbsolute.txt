@@ -1,0 +1,318 @@
+D:\JobShopCfM\JobShop\JobShop\bin\ApplicationInsights.config
+D:\JobShopCfM\JobShop\JobShop\bin\JobShop.dll.config
+D:\JobShopCfM\JobShop\JobShop\bin\JobShop.dll
+D:\JobShopCfM\JobShop\JobShop\bin\JobShop.pdb
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.exe
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.exe.config
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.rsp
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.exe
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.exe.config
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.rsp
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.AppContext.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Collections.Immutable.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Console.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Compression.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.FileSystem.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Pipes.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.AccessControl.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Claims.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Principal.Windows.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.ValueTuple.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XPath.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.exe
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.exe.config
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.rsp
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\VBCSCompiler.exe
+D:\JobShopCfM\JobShop\JobShop\bin\roslyn\VBCSCompiler.exe.config
+D:\JobShopCfM\JobShop\JobShop\bin\Antlr3.Runtime.dll
+D:\JobShopCfM\JobShop\JobShop\bin\EntityFramework.dll
+D:\JobShopCfM\JobShop\JobShop\bin\EntityFramework.SqlServer.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Agent.Intercept.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.DependencyCollector.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Web.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.WindowsServer.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.ApplicationInsights.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Google.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Web.Infrastructure.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Newtonsoft.Json.dll
+D:\JobShopCfM\JobShop\JobShop\bin\OptimizationHelper.dll
+D:\JobShopCfM\JobShop\JobShop\bin\Owin.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Diagnostics.DiagnosticSource.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Helpers.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Mvc.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Optimization.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Razor.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Deployment.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.dll
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Razor.dll
+D:\JobShopCfM\JobShop\JobShop\bin\WebGrease.dll
+D:\JobShopCfM\JobShop\JobShop\bin\OptimizationHelper.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Helpers.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Mvc.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Optimization.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.Razor.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Deployment.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Razor.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Newtonsoft.Json.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Antlr3.Runtime.pdb
+D:\JobShopCfM\JobShop\JobShop\bin\EntityFramework.xml
+D:\JobShopCfM\JobShop\JobShop\bin\EntityFramework.SqlServer.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Google.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\JobShopCfM\JobShop\JobShop\bin\System.Diagnostics.DiagnosticSource.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.DependencyCollector.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.WindowsServer.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Web.xml
+D:\JobShopCfM\JobShop\JobShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csprojAssemblyReference.cache
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.InitialCreate.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addfullname.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.feedback.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.contact.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender2.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.userPhoto.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.userPhoto1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddCategoryTable.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddJobsTable.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.applyJobs.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.EditJobModel.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddJobsTable1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyid.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname2.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.employer.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blog.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogcategory.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blog1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogViewModel.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogViewModel1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv2.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv3.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel1.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role2.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv4.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role3.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel2.resources
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.GenerateResource.cache
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.CoreCompileInputs.cache
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.CopyComplete
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.dll
+D:\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.pdb
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\ApplicationInsights.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\JobShop.dll.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\JobShop.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\JobShop.pdb
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.exe
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.exe.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csc.rsp
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.exe
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.exe.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\csi.rsp
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.AppContext.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Collections.Immutable.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Console.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Compression.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.FileSystem.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.IO.Pipes.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.AccessControl.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Claims.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Security.Principal.Windows.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.ValueTuple.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XPath.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.exe
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.exe.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\vbc.rsp
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\VBCSCompiler.exe
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\roslyn\VBCSCompiler.exe.config
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Antlr3.Runtime.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\EntityFramework.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\EntityFramework.SqlServer.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Agent.Intercept.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.DependencyCollector.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Web.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.WindowsServer.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.ApplicationInsights.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Google.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Web.Infrastructure.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Newtonsoft.Json.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\OptimizationHelper.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Owin.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Diagnostics.DiagnosticSource.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Helpers.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Mvc.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Optimization.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Razor.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Deployment.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Razor.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\WebGrease.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\OptimizationHelper.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Helpers.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Mvc.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Optimization.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.Razor.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Deployment.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Web.WebPages.Razor.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Newtonsoft.Json.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Antlr3.Runtime.pdb
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\EntityFramework.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\EntityFramework.SqlServer.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Google.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\System.Diagnostics.DiagnosticSource.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.DependencyCollector.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.WindowsServer.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.AI.Web.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csprojAssemblyReference.cache
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.InitialCreate.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addfullname.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.feedback.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.contact.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.gender2.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.userPhoto.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.userPhoto1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddCategoryTable.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddJobsTable.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.applyJobs.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.EditJobModel.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.AddJobsTable1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyid.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.addcompanyname2.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.employer.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blog.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogcategory.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blog1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogViewModel.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.blogViewModel1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv2.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv3.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel1.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role2.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.cv4.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.role3.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.Migrations.myviewmodel2.resources
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.GenerateResource.cache
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.CoreCompileInputs.cache
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.csproj.CopyComplete
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.dll
+D:\My Projects\JobShopCfM\JobShop\JobShop\obj\Debug\JobShop.pdb

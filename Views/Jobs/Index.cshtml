@@ -1,0 +1,73 @@
+﻿@model IEnumerable<JobShop.Models.Job>
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Index.css" />
+</head>
+<body>
+
+    <h2>List of Jobs</h2>
+    <p>
+        <a href="@Url.Action("Create", "Jobs")" class="btn btn-default"><i class="fa fa-plus"></i>Create New Job</a>
+    </p>
+        <table class="table table-stripped " >
+            <thead class="table-heading">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Category.categoryName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.jobTitle)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.jobContent)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salary)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.City)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.jobImage)
+                    </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.categoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.jobTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.jobContent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        <img src="~/uploads/@Html.DisplayFor(Model=>item.jobImage)"
+                             class="thumbnail" style="width:48px; height:48px" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                    </td>
+                </tr>
+            }
+        </table>
+</body>
+</html>

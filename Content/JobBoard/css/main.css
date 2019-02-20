@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Footer Style
+   ========================================================================== */
+footer .block-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+footer .footer-Content {
+  background-color: #202020;
+  padding: 60px 0;
+  color: #fff;
+}
+.textwidget {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+}
+footer .menu {
+  padding-left: 0;
+}
+footer .menu li {
+  padding-bottom: 10px;
+}
+footer .menu li a {
+  color: #fff;
+  padding: 0px;
+}
+footer .menu li a:hover {
+  color: #ff4f57;
+}
+.bottom-social-icons {
+  margin-bottom: 30px;
+}
+.bottom-social-icons a {
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  line-height: 44px;
+  margin-right: 5px;
+  border-radius: 50px;
+  background: #ff4f57;
+  display: inline-block;
+  height: 42px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon .facebook:hover {
+  background-color: #3b5998;
+}
+.social-icon .twitter:hover {
+  background-color: #55acee;
+}
+.social-icon .dribble:hover {
+  background-color: #D34836;
+}
+.social-icon .flickr:hover {
+  background-color: #ff0084;
+}
+.social-icon .youtube:hover {
+  background-color: #CC181E;
+}
+.social-icon .google-plus:hover {
+  background-color: #dd4b39;
+}
+.social-icon .linkedin:hover {
+  background-color: #007bb5;
+}
+footer ul li a {
+  padding: 0px;
+}
+footer {
+  padding: 0px;
+}

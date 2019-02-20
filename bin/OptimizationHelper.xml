@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OptimizationHelper</name>
+    </assembly>
+    <members>
+        <member name="M:StyleImagePathBundle.Include(System.String[])">
+            <summary>
+            Test
+            </summary>
+            <param name="virtualPaths"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

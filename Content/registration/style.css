@@ -1,0 +1,32 @@
+
+element.style {
+}
+
+.login {
+    background: #f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.login {
+    background: #f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+.login-wrapper {
+    margin: auto;
+    padding-top: 8%;
+    width: 402px;
+    min-width: 402px;
+    height: 403px;
+}
+.wrapper {
+    background: #f9f9f9;
+    font: 13px OpenSans;
+    min-width: 1200px;
+    overflow: visible;
+}

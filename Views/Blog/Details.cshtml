@@ -1,0 +1,84 @@
+﻿@model JobShop.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogCategory.CatTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogCategory.CatTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogImage)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogerEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogerEmailId)
+        </dd>
+        <dd>
+            <img src="~/blogs/@Html.DisplayFor(Model=>Model.BlogImage)"
+                 class="thumbnail" style="width:300px; height:300px" />
+        </dd>
+
+
+
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogContent)
+        </dd>
+
+
+
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

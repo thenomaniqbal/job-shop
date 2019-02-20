@@ -1,0 +1,39 @@
+﻿@model IEnumerable<JobShop.Models.JobsViewModel>
+
+<h2>
+    Details of all the users who applied to my jobs......
+</h2>
+
+
+
+@foreach (var gr in Model)
+{
+    <h3> @gr.JobTitle</h3>
+    <table class="table table-bordered table-hover" style="width:100%;">
+        <tr>
+            <th>
+                Searcher Name
+            </th>
+            <th>
+                Message
+            </th>
+            <th>
+                Date of Apply
+            </th>
+        </tr>
+        @foreach (var item in gr.items)
+        {
+            <tr>
+                <td>
+                    @item.user.UserName
+                </td>
+                <td>
+                    @item.Message
+                </td>
+                <td>
+                    @item.ApplyDate
+                </td>
+            </tr>
+        }
+    </table>
+}

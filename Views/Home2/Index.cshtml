@@ -1,0 +1,35 @@
+﻿@model IEnumerable<JobShop.Models.Category>
+@{
+
+}
+<div style="margin-bottom:250px">
+    <div class="jumbotron">
+        <h2>Welcome To JobShop</h2>
+        <p class="lead">If you are searching for a new career opportunity, you can search open vacancies and jobs. You can also signup here to be alerted of new jobs by email. </p>
+        <p><a href="#" class="btn btn-primary btn-lg">Go On &raquo;</a></p>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="panel panel-default" style="padding:15px; margin-bottom:10px;">
+            <h1 class="panel-heading">@Html.DisplayFor(modelItem => item.categoryName)</h1>
+            <h5>@Html.DisplayFor(modelItem => item.categoryDescription)</h5>
+            <div class="row">
+                @foreach (var subitem in item.Job)
+                {
+                    <div class="col-md-3 thumbnail" style="margin-left:20px;margin-bottom:-10px;height:350px;">
+                        <img src="~/uploads/@subitem.jobImage" style="width:200px;height:200px;" />
+                        <h3>@Html.DisplayFor(modelItem => subitem.jobTitle)</h3>
+                        <h5>@Html.DisplayFor(modelItem => subitem.jobContent)</h5>
+                        <h6>@Html.DisplayFor(modelItem => subitem.Salary)</h6>
+                        <h7>@Html.DisplayFor(modelItem => subitem.City)</h7>
+
+
+                        @Html.ActionLink("Details", "Details", new { jobId = subitem.id }, new { @class = "btn btn-primary" })
+                    </div>
+
+
+                }
+            </div>
+        </div>
+    }
+</div>

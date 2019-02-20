@@ -1,0 +1,65 @@
+﻿@model JobShop.Models.FileUploadDBModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DownloadApplications-JobShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <section id="candidates" class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 bg-white padding-2">
+                    <h2><i>Job Applications Database</i></h2>
+                    <p>In this section you can download applicationforms of those jobs which needs to be submited along with the cv through an email address.</p>
+                    <p>just simply click on the required file and download it. </p>
+                    <p>Thankyou!</p>
+                    <div class="row margin-top-20">
+                        <div class="col-md-12">
+                            <div class="box-body table-responsive no-padding">
+
+
+
+
+
+                                @{
+                                    ViewBag.Title = "Download Files";
+                                    var Files = (ViewBag.Files as string[]);
+
+                                    if (Files != null && Files.Any())
+                                    {
+                                        foreach (var file in Files)
+                                        {
+
+                                            <br />
+                                            @Html.ActionLink(file, "DownloadFile", new { fileName = file })
+                                            <br />
+
+
+
+
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <label>No File(s) to Download</label>
+                                    }
+                                }
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

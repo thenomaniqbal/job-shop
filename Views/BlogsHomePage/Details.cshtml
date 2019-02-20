@@ -1,0 +1,91 @@
+﻿@model JobShop.Models.Blog
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Bootstrap Blog Template">
+    <meta name="author" content="Vijaya Anand">
+    <title>Home</title>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Custom Bootstrap CSS file -->
+    <link href="~/Content/Blog Home Page/bootstrap-custom/css/custom.bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Blog Home Page/blog.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 style="text-align:center">JobShop Blogs</h1>
+    <!-- Body -->
+    <div class="container" style="width:100%;background-color:lemonchiffon">
+        <div class="row">
+            <article>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogCategory.CatTitle)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BlogCategory.CatTitle)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogTitle)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BlogTitle)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogerName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BlogerName)
+                </dd>
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogerEmailId)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BlogerEmailId)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DateCreated)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DateCreated)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogImage)
+                </dt>
+                <dd>
+                    <img src="~/blogs/@Html.DisplayFor(Model=>Model.BlogImage)"
+                         class="thumbnail" style="width:300px; height:300px" />
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BlogContent)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BlogContent)
+                </dd>
+            </dl>
+    </article>
+        </div>
+      </div>
+            <p>
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+
+</body>
+</html>

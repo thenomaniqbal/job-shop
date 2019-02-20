@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+Update your profile picture:
+
+@using (Html.BeginForm("Profile", "Manage", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Photo</legend>
+        <div class="editor-label">
+            <label for="profile">FileName:</label>
+        </div>
+        <div class="editor-field">
+            <input name="Profile" id="profile" type="file" />
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+
+
+

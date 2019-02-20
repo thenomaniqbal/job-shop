@@ -1,0 +1,98 @@
+﻿.navbar-default {
+    background-color : #0c5c82;
+    border-color : #e7e7e7;
+    
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:#e7e7e7;
+    font-family:Courier;
+    font-size:small;
+    font-weight:bold;
+    padding:15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:azure;
+}
+.nav>li{
+    position:relative;
+    display:block;
+    height : 60px;
+    padding-top:5px; 
+}
+.myfooter{
+    margin-bottom:-20px;
+    background-color:cornflowerblue;
+    text-align:justify;
+    bottom:0;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.subfooter {
+    background-color:#0c5c82;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-family:Calibri
+}
+
+.subfooter span{
+   color:azure
+}
+.login_Register{
+   float:right;
+}
+
+.myfooter li{
+    
+}
+.myfooter a{
+    color:azure;
+    text-align:left;
+    font-family:Calibri
+}
+.myfooter h3,ul,p{
+    list-style-type:none;
+    margin-bottom:20px;
+    text-align:left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.logo-size{
+    margin-left:60px;
+   padding-right:25px;
+   margin-bottom:-25px; 
+   width:125px
+}
+html {
+  height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    margin-top:70px;
+}
+#searchName {  
+    margin-top:8px;
+    padding:5px;
+    width: 230px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    background-position:right;
+    background-image: url('../images/search.png');
+    background-repeat:no-repeat;
+    transition:width 0.4s ease-in-out;
+}
+#searchName:focus{
+    width:180%
+}
+.img-size{
+    font-size:20px;
+}

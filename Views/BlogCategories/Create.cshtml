@@ -1,0 +1,138 @@
+﻿@model JobShop.Models.BlogCategory
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobshop Blogs</title>
+    <link rel="stylesheet" href="~/Content/blog/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/blog/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/blog/css/style.css">
+
+    <script src="~/Content/blog/js/jquery.min.js"></script>
+    <script src="~/Content/blog/js/tether.min.js"></script>
+    <script src="~/Content/blog/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+</head>
+<body>
+
+    <nav class=" navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-target="#mynavbar" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand mr-3">JobShop</a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "Blog")" class="nav-link ">BlogDashboard </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "Blog")" class="nav-link">Posts </a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "BlogCategories")" class="nav-link active">Category </a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "Home")" class="nav-link">Back To JobShop </a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="@Url.Action("", "")" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>Welcome admin
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="~/Content/blog/profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>About Me</a>
+                        </div>
+
+                    </li>
+                    @*<li class="nav-item ">
+                        <a href="javascript:document.getElementById('logoutForm').submit()" class="nav-link"><i class="fa fa-user-circle"></i>Logout</a>
+                    </li>*@
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @*Header*@
+    <header id="main-header" class="bg-success py-2 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6-md">
+                    <h1><i class="fa fa-book"></i>Catagory</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    @*Section*@
+    <section id="section" class="py-4 mb-4 bg-faded">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <a href="@Url.Action("Index", "Blog")" class="btn btn-primary btn-block">
+                        <i class="fa fa-plus"></i>View Posts
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="@Url.Action("Index", "BlogCategories")" class="btn btn-success btn-block">
+                        <i class="fa fa-list"></i>View Categories
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="@Url.Action("Create", "Blog")" class="btn btn-primary btn-block">
+                        <i class="fa fa-plus"></i>Add Post First
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>BlogCategory</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.CatTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CatTitle, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CatTitle, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+ </body>
+</html>

@@ -1,0 +1,436 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+@*<h1>
+        nomy Profile Image ..
+
+        <img src="@Url.Action("UserPhotos", "Home" )" style="width:160px;height:160px; background: #FFFFFF;
+        margin: auto;
+        -moz-border-radius: 60px;
+        border-radius: 100px;
+        padding: 6px;
+        box-shadow: 0px 0px 20px #888;" />
+    </h1>*@
+
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="margin-left: 0px;">
+
+    <section class="content-header bg-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center index-head">
+                    <h1>All <strong>JOBS</strong> In One Place</h1>
+                    @*<p class="btn btn-success btn-lg">One search, global reach</p>*@
+                    @*<p><a class="btn btn-success btn-lg" href="@Url.Action("Index", "Job")" role="button">Search Jobs</a></p>*@
+
+
+                    <ul type="none">
+                        <li>
+                            @using (Html.BeginForm("Search", "Home2", FormMethod.Post))
+                            {
+
+                                <input id="searchName" style="width:430px;margin-left:200px" name="searchname" class="form-control" type="text" placeholder="Search Here !" /><span class="input-group-btn"> <button class="btn btn-primary" style="margin-right:70px" type="submit"><span class="glyphicon glyphicon-search"></span>Search Jobs Here</button> </span>
+                            }
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 latest-job margin-bottom-20">
+                    <h1 class="text-center">Latest Jobs</h1>
+
+                    <div class="attachment-block " style="width:0px;margin-left:360px;">
+                        <a href="@Url.Action("Index", "Home2")">
+                            <img class="thumbnail candidate-img" style="width:400px;height:250px;" src="~/JobShop/img/jobs.jpg" alt="Attachment Image" />
+
+                            <h4 class="attachment-pushed" style="font-size:40px;width:40px;margin-right:30px;"> BrowseJobs</h4>
+                        </a>
+                        <div class="attachment-pushed">
+                            <h4 class="attachment-heading"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company" class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center latest-job margin-bottom-20">
+                    <h1>Companies</h1>
+                    <p>Hiring? Register your company for free, browse our talented pool, post and track job applications</p>
+                </div>
+            </div>
+            <div class="row" style="margin-right:50px;">
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/postjob.png" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("Create", "Jobs")"> Post A Job </a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/Company.jpg" alt="Apply & Get Interviewed">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("EmployerDashboard", "Dashboard")">CompanyDashboard</a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/Application.jpg" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"><a href="@Url.Action("upload", "Uploadcv")">Upload A Job Application </a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/RESUME.jpg" alt="Apply & Get Interviewed">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("Download", "Resume")">Resumes Database</a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="candidates" class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center latest-job margin-bottom-20">
+                    <h1>Admin</h1>
+                    <p>includes certain operations and manages our application.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-right:40px;">
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/Blog.png" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"><a href="@Url.Action("Index", "Blog")">Blogs Dashboard </a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/admin.jpg" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("AdminDashboard", "Dashboard")"> Admin Dashboard </a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail candidate-img">
+                        <img src="~/JobShop/img/hire.png" alt="Start A Career" style="height:200px">
+                        <div class="caption">
+                            <h3 class="text-center"><a href="@Url.Action("Index", "Employer")">Registered Employers </a></h3>
+                        </div>
+                    </div>
+
+                </div>
+                @*<div class="col-sm-4 col-md-4">
+                    <div class="thumbnail candidate-img">
+                        <img src="~/JobShop/img/interviewed.jpeg" alt="Apply & Get Interviewed">
+                        <div class="caption">
+                            <h3 class="text-center"><a href="http://localhost:20320/Employer/Index?Title='TopEmployer'"> Top Employers </a></h3>
+                        </div>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="company" class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center latest-job margin-bottom-20">
+                    <h1>Users</h1>
+                    <p>view jobs,read blogs,apply to jobs and get hired </p>
+                </div>
+            </div>
+            <div class="row" style="margin-right:50px;">
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail candidate-img">
+                        <img src="~/JobShop/img/blogsread.jpg" alt="Blogs" style="height:200px">
+                        <div class="caption">
+                            <h3 class="text-center"><a href="@Url.Action("Index", "BlogsHomePage")">Blogs </a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/cvsjs.png" alt="Browse Jobs" style="height:200px">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("Index", "Resume")"> Upload Cv </a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/browse.jpg" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("UserDashboard", "Dashboard")"> User Dashboard </a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/cvr.jpg" alt="Job pplications" style="height:173px">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("Download", "Uploadcv")"> Download Job Application forms </a> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="thumbnail company-img">
+                        <img src="~/JobShop/img/FeedBack.png" alt="Browse Jobs">
+                        <div class="caption">
+                            <h3 class="text-center"> <a href="@Url.Action("Create", "Feedback")"> Feed back </a> </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    @*<section id="statistics" class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center latest-job margin-bottom-20">
+                        <h1>Our Statistics</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+
+                                $sql = "SELECT * FROM Jobs";
+                                $result = $conn->query($sql);
+                                if($result->num_rows > 0) {
+                                $totalno = $result->num_rows;
+                                } else {
+                                $totalno = 0;
+                                }
+
+                                <h3> $totalno; ?></h3>
+
+                                <p>Job Offers</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-ios-paper"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                            <div class="inner">
+
+                                $sql = "SELECT * FROM company WHERE active='1'";
+                                $result = $conn->query($sql);
+                                if($result->num_rows > 0) {
+                                $totalno = $result->num_rows;
+                                } else {
+                                $totalno = 0;
+                                }
+
+                                <h3> $totalno; </h3>
+
+                                <p>Registered Company</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+
+                                $sql = "SELECT * FROM users WHERE resume!=''";
+                                $result = $conn->query($sql);
+                                if($result->num_rows > 0) {
+                                $totalno = $result->num_rows;
+                                } else {
+                                $totalno = 0;
+                                }
+
+                                <h3> $totalno; </h3>
+
+                                <p>CV'S/Resume</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-ios-list"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                            <div class="inner">
+
+                                $sql = "SELECT * FROM users WHERE active='1'";
+                                $result = $conn->query($sql);
+                                if($result->num_rows > 0) {
+                                $totalno = $result->num_rows;
+                                } else {
+                                $totalno = 0;
+                                }
+
+                                <h3> $totalno; </h3>
+
+                                <p>Daily Users</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-stalker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+            </div>
+        </section>*@
+
+    <section id="about" class="content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center latest-job margin-bottom-20">
+                    <h1><a href="@Url.Action("About", "Home2")">About US </a> </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/JobShop/img/browse.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6 about-text margin-bottom-20">
+                    <p>Final year project........... </p>
+                    <p>
+                        This online jobShop  application allows job seekers and recruiters to<br /> connect.
+                        The application provides the ability for job seekers to create <br />their accounts,
+                        upload their profile and resume, search for jobs, apply<br /> for jobs,view different
+                        job openings.The application provides the ability<br />for companies to create their
+                        accounts, search candidates, create job <br />postings, and view candidates applications.<br />
+
+                        This website is used to provide a platform for potential candidates to<br />
+                        get their dream job and excel in yheir career.This site can be used as <br />
+                        a paving path for both companies and job-seekers for a better life .
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- /.content-wrapper -->
+
+<footer class="main-footer" style="margin-left: 0px;">
+    <!-- Footer Section Start -->
+    <!-- Footer Area Start -->
+    <section class="footer-Content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget">
+                        <h3 class="block-title"><a href="@Url.Action("About", "Home")"><img src="~/Content/images/logo.png" class="img-responsive" alt="Footer Logo"> </a> </h3>
+                        <div class="textwidget">
+                            <p>My name is Noman Iqbal,i am the student of BS-Software engineering in IIUI and this is my final year project.I have done it in asp.net mvc CodeFirst .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget">
+                        <h3 class="block-title">Quick Links</h3>
+                        <ul class="menu">
+                            <li><a href="@Url.Action("About", "Home2")">About Us</a></li>
+                            <li><a href="@Url.Action("Faq", "Home")">Faq</a></li>
+                            <li><a href="@Url.Action("PrivacyPolicy", "Home")">Privacy&Policy</a></li>
+                            <li><a href="@Url.Action("Create", "Feedback")">FeedBack</a></li>
+                            <li><a href="@Url.Action("Create", "Contact")">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget">
+                        <h3 class="block-title">Trending Jobs</h3>
+                        <ul class="menu">
+                            <li><a href="http://localhost:20320/Home2/Details?jobId=20">Android Developer</a></li>
+                            <li><a href="http://localhost:20320/Home2/Details?jobId=21">Senior Accountant</a></li>
+                            <li><a href="http://localhost:20320/Home2/Details?jobId=19">Frontend Developer</a></li>
+                            <li><a href="http://localhost:20320/Home2/Details?jobId=25">Junior Tester</a></li>
+                            <li><a href="http://localhost:20320/Home2/Details?jobId=22">Project Manager</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget">
+                        <h3 class="block-title">Follow Us</h3>
+                        <div class="bottom-social-icons social-icon">
+                            <a class="twitter" href="https://twitter.com"><i class="ti-twitter-alt"></i>Twitter</a>
+                            <a class="facebook" href="https://web.facebook.com"><i class="ti-facebook"></i>Facebok</a>
+                            <a class="youtube" href="https://youtube.com"><i class="ti-youtube"></i>youtube</a>
+                            <a class="linkedin" href="https://www.linkedin.com"><i class="ti-linkedin">linkedin</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer area End -->
+</footer>
+
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
+
+
+<!-- ./wrapper -->
+<!-- jQuery 3 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/JobShop/js/adminlte.min.js"></script>
+@*</body>
+    </html>*@

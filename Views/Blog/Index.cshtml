@@ -1,0 +1,361 @@
+﻿@model IEnumerable<JobShop.Models.Blog>
+@using Microsoft.AspNet.Identity
+
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobshop Blogs</title>
+    <link rel="stylesheet" href="~/Content/blog/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/blog/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/blog/css/style.css">
+
+    <script src="~/Content/blog/js/jquery.min.js"></script>
+    <script src="~/Content/blog/js/tether.min.js"></script>
+    <script src="~/Content/blog/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+</head>
+<body>
+
+    <nav class=" navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-target="#mynavbar" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand mr-3">JobShop</a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "Blog")" class="nav-link active">BlogDashboard </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index","Blog")" class="nav-link active ">Posts </a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "BlogCategories")" class="nav-link">Category </a>
+                    </li>
+                    @*<li class="nav-item px-2">
+                        <a href="~/Content/blog/users.html" class="nav-link ">Users </a>
+                    </li>*@
+
+                    <li class="nav-item px-2">
+                        <a href="@Url.Action("Index", "Home")" class="nav-link">Back To JobShop </a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="@Url.Action("", "")" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>Welcome  Admin
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="~/Content/blog/profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>AboutMe</a>
+
+                        </div>
+
+                    </li>
+                    @*<li class="nav-item ">
+                        <a href="javascript:document.getElementById('logoutForm').submit()" class="nav-link"><i class="fa fa-user-circle"></i>Logout</a>
+                    </li>*@
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @*Header*@
+    <header id="main-header" class="bg-primary py-2 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6-md">
+                    <h1><i class="fa fa-gear"></i>Dashboard</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    @*Section*@
+    <section id="section" class="py-4 mb-4 bg-faded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="@Url.Action("Create", "Blog")" class="btn btn-primary btn-block" >
+                        <i class="fa fa-plus"></i>Add Post
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="@Url.Action("Create", "BlogCategories")" class="btn btn-success btn-block">
+                        <i class="fa fa-plus"></i>Add Catagory
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="@Url.Action("Index", "BlogCategories")" class="btn btn-warning btn-block" >
+                        <i class="fa fa-list"></i>View Categories
+                    </a>
+                </div>
+                @*<div class="col-md-3">
+                    <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModel">
+                        <i class="fa fa-plus"></i>View Categories
+                    </a>
+                </div>*@
+            </div>
+        </div>
+    </section>
+
+    @*post*@
+    <section id="Posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4> Latest Posts</h4>
+                        </div>
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    @*<th>
+            @Html.DisplayNameFor(model => model.BlogCategory.CatTitle)
+        </th>*@
+
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BlogTitle)
+                                    </th>
+
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BlogerName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DateCreated)
+                                    </th>
+                                    @*<th>
+                                        @Html.DisplayNameFor(model => model.BlogContent)
+                                    </th>*@
+
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BlogImage)
+                                    </th>
+                                    <th>
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tbody>
+                                    <tr>
+                                                                       @*<td>
+                                       @Html.DisplayFor(modelItem => item.BlogCategory.CatTitle)
+                                       </td>*@
+                                                                       @*<td>
+                                           @Html.DisplayFor(modelItem => item.BlogContent)
+                                       </td>*@
+                                                                       <td>
+                                            @Html.DisplayFor(modelItem => item.BlogTitle)
+
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BlogerName)
+
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DateCreated)
+
+                                        </td>
+                                        <td>
+                                            <img src="~/blogs/@Html.DisplayFor(Model => item.BlogImage)"
+                                                 class="thumbnail" style="width:48px; height:48px" />
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                            @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+
+                                        </td>
+                                        @*<td><a href="~/blogen/details.html" class="btn btn-secondary"><i class=" fa fa-angle-double-right"></i>Details</a></td>*@
+
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-primary mb-3 text-center text-white">
+                        <div class="card-block">
+                            <h3>Posts</h3>
+                            <h1 class="display-4"><i class="fa fa-pencil"></i></h1>
+                            <a href="@Url.Action("Index", "BlogsHomePage")" class="btn btn-sm btn-outline-secondary text-white">View</a>
+                        </div>
+                    </div>
+
+                    <div class="card card-success mb-3 text-center text-white">
+                        <div class="card-block">
+                            <h3>Categories</h3>
+                            <h1 class="display-4"><i class="fa fa-pencil"></i></h1>
+                            <a href="@Url.Action("Index", "BlogCategories")" class="btn btn-sm btn-outline-secondary text-white">View</a>
+                        </div>
+                    </div>
+
+
+                    @*<div class="card card-warning mb-3 text-center text-white">
+                        <div class="card-block">
+                            <h3>Users</h3>
+                            <h1 class="display-4"><i class="fa fa-pencil"></i>2</h1>
+                            <a href="#" class="btn btn-sm btn-outline-secondary text-white">View</a>
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer" class="text-center text-white bg-inverse mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead">copyright 2017 &copy;JobShopBlogs</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @*@*Posts modal
+    <div class="modal fade" id="addPostModel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Add Post</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title" class="form-control-label">Title</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Category" class="form-control-label">Category</label>
+                            <select class="form-control">
+                                <option>Web devolopment</option>
+                                <option>technology</option>
+                                <option>health</option>
+                                <option>love</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file" class="form-control-File">ImageUpload</label>
+                            <input type="file" class="form-control-file" id="file" />
+                            <small class="from-text text-muted">max 3mb</small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea name="editor1" class="form-control"></textarea>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" data-dismiss="modal">Add Post</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+    @*category*@
+    <div class="modal fade" id="addCategoryModel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Add Catagory</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="title" class="form-control-label">Title</label>
+                            <input type="text" class="form-control" />
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-dismiss="modal">Add Category</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*users*@
+    <div class="modal fade" id="addUserModel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title">Add Users</h5>
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-control-label">Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="form-control-label">Email</label>
+                            <input type="email" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-control-label">Password</label>
+                            <input type="password" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-control-label">Confirm Password</label>
+                            <input type="password" class="form-control" />
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-warning" data-dismiss="modal">Add User</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

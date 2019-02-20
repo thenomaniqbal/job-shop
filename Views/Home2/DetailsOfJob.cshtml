@@ -1,0 +1,35 @@
+﻿@model JobShop.Models.ApplyForJob
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Details Of Job</h2>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.job.jobTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.jobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplyDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApplyDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "GetJobsByUser")
+</p>

@@ -1,0 +1,70 @@
+﻿@model JobShop.Models.Contact
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Client Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="~/Content/contact/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+    <link href="//fonts.googleapis.com/css?family=Amita:400,700" rel="stylesheet">
+    <!-- //web font -->
+</head>
+<body>
+    <!-- main -->
+    <div class="main">
+        <h1>Thank You For Being Here</h1>
+        <div class="main-row">
+            <div class="agileits-info">
+                <div class="agileits-infoleft">
+                    <img src="~/Content/Dashboard/Images/dotnetsai.png" alt="" />
+                </div>
+                <div class="agileits-inforight">
+                    <h2>JobShop</h2>
+                    <h6>ContactForm</h6>
+                    <p><img src="~/Images/contact/i1.png" alt=""> +923088442522</p>
+                    <p><img src="~/Images/contact/i2.png" alt=""> <a href="njobshop@gmail.com"> njobshop@gmail.com</a></p>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <h3>SEND A QUICK MESSAGE TO JobShop</h3>
+            <div class="contact-wthree">
+                @using (Html.BeginForm("Create", "Contact", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.TextBoxFor(m => m.FullName, new { @placeholder = "Full name" })
+                    @Html.ValidationMessageFor(m => m.FullName)
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @placeholder = "Mobile Number" })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber)
+                    @Html.TextBoxFor(m => m.Email, new { @placeholder = "Email" })
+                    @Html.ValidationMessageFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Message, new { @placeholder = "Message" })
+                    @Html.ValidationMessageFor(m => m.Message)
+                    <input type="submit" value="SUBMIT">
+
+                }
+            </div>
+        </div>
+    </div>
+    <!-- //main -->
+    <!-- copyright -->
+    <div class="w3copyright-agile">
+        <p>© 2018.JobShop All rights reserved | Design by Noman Iqbal<a href="#" class="w3_agile">*</a></p>
+    </div>
+    <!-- //copyright -->
+
+</body>
+</html>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
