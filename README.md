@@ -24,7 +24,7 @@ It provides a seamless platform where employers can **post jobs**, and job seeke
 - [Tech Stack](#-tech-stack)
 - [System Requirements](#-system-requirements)
 - [Database Schema](#-database-schema)
-- [Setup Instructions and Documentation](#-setup-instructions-documentation)
+- [Documentation](#-documentation)
 
 ---
 
@@ -205,10 +205,7 @@ Results showed smooth, error-free operation under expected workloads.
 | **OS**        | Windows 7/10/11 |
 | **IDE**       | Visual Studio 2017 or above |
 
-
 ---
-
-
 
 ## 🗃 Database Schema
 The database is implemented using **Entity Framework Code-First**.  
@@ -220,17 +217,10 @@ Tables include:
 - Blogs
 - Feedback
 
-
 ---
 
+## 💻 Documentation
 
-
-## ⚙️ Setup Instructions and 💻 Documentation
-
-Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/job-shop.git
-cd job-shop
 Documentation available upon Request!
+
 ---
