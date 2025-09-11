@@ -91,7 +91,10 @@ The system is divided into three roles:
 
 3. **Job Seeker**  
    - Searches jobs, uploads resumes, applies for positions.
-
+<p align="center">
+  <img src="images/usecase.png" alt="usecase" width="80%" height="320">
+</p>  
+                                         <p align="center"> <b>Figure 1. Use Case Diagram</b> </p>      
 ![Architecture Diagram](images/system-architecture.png)
 
 ---
