@@ -24,8 +24,7 @@ It provides a seamless platform where employers can **post jobs**, and job seeke
 - [Tech Stack](#-tech-stack)
 - [System Requirements](#-system-requirements)
 - [Database Schema](#-database-schema)
-- [Setup Instructions](#-setup-instructions)
-- [Documentation](#-documentation)
+- [Setup Instructions and Documentation](#-setup-instructions-documentation)
 
 ---
 
@@ -226,18 +225,12 @@ Tables include:
 
 
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions and 💻 Documentation
 
-### 1. Clone the Repository
+Clone the Repository
+
 ```bash
 git clone https://github.com/yourusername/job-shop.git
 cd job-shop
-
-
+Documentation available upon Request!
 ---
-
-
-
-## 💻 Documentation
-
-Available upon Request!
