@@ -92,7 +92,7 @@ The system is divided into three roles:
 3. **Job Seeker**  
    - Searches jobs, uploads resumes, applies for positions.
 
-![Architecture Diagram](docs/diagrams/system-architecture.png)
+![Architecture Diagram](images/system-architecture.png)
 
 ---
 
@@ -130,7 +130,7 @@ The system is divided into three roles:
 6. **Blog Management**
 7. **Feedback Submission**
 
-![Use Case Diagram](docs/diagrams/use-case-diagram.png)
+![Use Case Diagram](images/use-case-diagram.png)
 
 ---
 
@@ -143,14 +143,14 @@ The ERD defines relationships between entities such as:
 - Blogs
 - Feedback
 
-![ER Diagram](docs/diagrams/er-diagram.png)
+![ER Diagram](images/er-diagram.png)
 
 ---
 
 ## 🔄 Activity Diagram
 The activity flow of the system, from registration to job application and admin actions.
 
-![Activity Diagram](docs/diagrams/activity-diagram.png)
+![Activity Diagram](images/activity-diagram.png)
 
 ---
 
@@ -221,7 +221,7 @@ Tables include:
 - Blogs
 - Feedback
 
-![Database Schema](docs/diagrams/database-schema.png)
+![Database Schema](images/database-schema.png)
 
 ---
 
