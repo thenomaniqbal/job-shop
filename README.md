@@ -1,147 +1,233 @@
 # 🏢 Job Shop – Online Job Portal
 
-**Job Shop** is a dynamic **ASP.NET MVC** web application designed to bridge the gap between **job providers** (employers/companies) and **job seekers**.
-The platform allows employers to post job opportunities and job seekers to search, apply, and upload their resumes seamlessly.
+![Status](https://img.shields.io/badge/status-complete-success)
+![Tech](https://img.shields.io/badge/tech-ASP.NET%20MVC-blue)
+
+**Job Shop** is a dynamic **ASP.NET MVC** web application that bridges the gap between **job providers** (employers/companies) and **job seekers**.  
+It provides a seamless platform where employers can **post jobs**, and job seekers can **search, apply, and upload resumes** effortlessly.
 
 ---
 
 ## 📜 Table of Contents
-
-* [Introduction](#-introduction)
-* [Problem Statement](#-problem-statement)
-* [Proposed Solution](#-proposed-solution)
-* [Features](#-features)
-* [Modules](#-modules)
-* [Tech Stack](#-tech-stack)
-* [System Requirements](#-system-requirements)
-* [Database Schema](#-database-schema)
-* [Setup Instructions](#-setup-instructions)
-* [Usage](#-usage)
-* [Testing](#-testing)
-* [Future Enhancements](#-future-enhancements)
-* [Screenshots](#-screenshots)
-* [License](#-license)
-* [Acknowledgments](#-acknowledgments)
+- [Overview](#-overview)
+- [Problem Statement](#-problem-statement)
+- [Proposed Solution](#-proposed-solution)
+- [Scope](#-scope)
+- [Objectives](#-objectives)
+- [System Architecture & Methodology](#-system-architecture--methodology)
+- [Modules](#-modules)
+- [Use Cases & Diagrams](#-use-cases--diagrams)
+- [Entity Relationship Diagram](#-entity-relationship-diagram)
+- [Activity Diagram](#-activity-diagram)
+- [Experimental Results](#-experimental-results)
+- [System Testing](#-system-testing)
+- [Tech Stack](#-tech-stack)
+- [System Requirements](#-system-requirements)
+- [Database Schema](#-database-schema)
+- [Setup Instructions](#-setup-instructions)
+- [Usage](#-usage)
+- [Future Enhancements](#-future-enhancements)
+- [Screenshots](#-screenshots)
+- [References](#-references)
+- [Acknowledgments](#-acknowledgments)
+- [License](#-license)
 
 ---
 
-## 🌟 Introduction
+## 🌟 Overview
+**Job Shop** connects **talent** with **opportunity** through a unified, user-friendly online portal.  
+It serves two main user types:
+- **Employers** – to post job openings and manage applicants.
+- **Job Seekers** – to search and apply for relevant jobs.
 
-**Job Shop** connects **talent** with **opportunity** through an intuitive online portal.
-It provides a single platform where:
-
-* Employers can post job openings and manage applicants.
-* Job seekers can find, apply for, and track job opportunities.
-
-The system also features a **blogging module** and **feedback system** to engage the user community.
+Additionally, a **blogging module** and **feedback system** are included to build a community and enhance engagement.
 
 ---
 
 ## ❗ Problem Statement
+Traditional job search and recruitment methods are:
+- Time-consuming and inefficient.
+- Based on outdated approaches like newspaper ads and manual CV submissions.
+- Difficult for both employers and job seekers to manage effectively.
 
-The traditional hiring process is **time-consuming** and **inefficient**:
-
-* Employers rely on outdated methods such as newspaper ads or manual application collection.
-* Job seekers face difficulties finding relevant job opportunities.
-
-Existing online job portals have **limited features**, dull interfaces, and are often **hard to navigate**.
+Current online platforms have **dull interfaces**, **limited features**, and lack efficient search/filtering options.
 
 ---
 
 ## 💡 Proposed Solution
-
-The **Job Shop** platform simplifies hiring by:
-
-* Allowing **job seekers** to search, apply, and upload resumes digitally.
-* Enabling **employers** to manage job postings, download resumes, and communicate with applicants.
-* Providing **filters** to search jobs by **category**, **city**, or **salary range**.
-* Offering a **blog section** for career guidance and company updates.
+The **Job Shop** platform aims to solve these issues by:
+- Providing **digital resume submission** and **job application** workflows.
+- Enabling **employers** to review applications, download resumes, and communicate directly with candidates.
+- Offering **search filters** by **job title**, **city**, **category**, and **salary**.
+- Introducing a **blog system** for career advice and news.
 
 ---
 
-## ✨ Features
+## 📌 Scope
+- Centralized portal for both **job seekers** and **employers**.
+- Provides admin management for users, jobs, resumes, and blogs.
+- Allows job seekers to **create public profiles**, **upload resumes**, and **track applications**.
+- Employers can **search candidates**, **create job listings**, and **manage applications**.
 
-* **User Roles**:
+---
 
-  * Admin
-  * Employer/Company
-  * Job Seeker
-* **Job Search Filters**: Search by title, city, or salary.
-* **Dynamic Resume Uploads**: Upload multiple formats (PDF, DOC, TXT).
-* **Job Application Management**:
+## 🎯 Objectives
+- Build a **dynamic web platform** that connects job seekers and employers.
+- Enable job providers to post detailed job descriptions and view applications.
+- Allow job seekers to **search**, **apply**, and **upload resumes** securely.
+- Provide a **feedback system** for continuous improvement.
 
-  * Employers can view, accept, or reject applications.
-  * Download candidate resumes directly.
-* **Blogging Module**: Post and categorize blogs.
-* **Feedback System**: Collect user feedback and inquiries.
-* **Secure Authentication**: Role-based login system.
+---
+
+## 🏗 System Architecture & Methodology
+
+### Methodology Workflow:
+The system is divided into three roles:
+1. **Admin**  
+   - Manages categories, users, jobs, resumes, blogs, and overall system integrity.
+
+2. **Employer**  
+   - Posts jobs, manages applicants, and downloads resumes.
+
+3. **Job Seeker**  
+   - Searches jobs, uploads resumes, applies for positions.
+
+![Architecture Diagram](docs/diagrams/system-architecture.png)
 
 ---
 
 ## 🧩 Modules
 
 ### **1. Admin**
+- Manage users (add, delete, view).
+- Manage job categories and posts.
+- Approve/reject resumes.
+- View feedback and contact messages.
+- Notify users of updates.
 
-* Manage users, employers, jobs, resumes, blogs, and feedback.
-* Notify users about job updates.
-
-### **2. Employer / Job Provider**
-
-* Post, update, and delete job listings.
-* Download resumes and manage applications.
-* Communicate with job seekers via the portal.
+### **2. Employer**
+- Register/login to create a profile.
+- Post and manage job listings.
+- View and download resumes of applicants.
+- Send messages to job seekers.
 
 ### **3. Job Seeker**
+- Register/login to create a profile.
+- Search for jobs using filters.
+- Apply for jobs and send application messages.
+- Upload multiple resume formats (PDF, DOC, TXT).
 
-* Search and apply for jobs.
-* Upload and manage resumes.
-* Download job application forms.
-* View blogs and leave feedback.
+---
+
+## 📝 Use Cases & Diagrams
+
+### Primary Use Cases:
+1. **Login/Registration**
+2. **Job Posting**
+3. **Job Search & Application**
+4. **Resume Upload**
+5. **Resume Download**
+6. **Blog Management**
+7. **Feedback Submission**
+
+![Use Case Diagram](docs/diagrams/use-case-diagram.png)
+
+---
+
+## 📊 Entity Relationship Diagram
+The ERD defines relationships between entities such as:
+- Users
+- Jobs
+- Job Categories
+- Resumes
+- Blogs
+- Feedback
+
+![ER Diagram](docs/diagrams/er-diagram.png)
+
+---
+
+## 🔄 Activity Diagram
+The activity flow of the system, from registration to job application and admin actions.
+
+![Activity Diagram](docs/diagrams/activity-diagram.png)
+
+---
+
+## 🧪 Experimental Results
+During development, the following experiments were conducted:
+- Multi-role login and authentication.
+- Job posting and management tests.
+- Resume upload/download functionality.
+- Blog posting system verification.
+- Search filter performance testing.
+
+Results showed smooth, error-free operation under expected workloads.
+
+---
+
+## 🧾 System Testing
+
+### Types of Testing:
+1. **Unit Testing** – Verify individual modules.
+2. **Black Box Testing** – Validate external behavior.
+3. **Integration Testing** – Ensure modules work together.
+4. **System Testing** – Validate end-to-end workflows.
+5. **Acceptance Testing** – Final verification by stakeholders.
+
+### Test Plan Table:
+| **Test Case**            | **Status** |
+| ------------------------ | ---------- |
+| Registration/Login       | ✅ Passed  |
+| Job Posting              | ✅ Passed  |
+| Search/View/Apply to Job | ✅ Passed  |
+| Resume Upload            | ✅ Passed  |
+| Blog Posting             | ✅ Passed  |
+| Logout                   | ✅ Passed  |
 
 ---
 
 ## 🛠 Tech Stack
 
-| **Category**        | **Technology**                                    |
-| ------------------- | ------------------------------------------------- |
+| **Category**        | **Technology** |
+| ------------------- | -------------- |
 | **Frontend**        | HTML5, CSS3, Bootstrap, JavaScript, jQuery, Razor |
-| **Backend**         | ASP.NET MVC 5                                     |
-| **Database**        | Microsoft SQL Server 2017                         |
-| **Tools**           | Visual Studio 2017, Notepad++                     |
-| **Version Control** | Git & GitHub                                      |
+| **Backend**         | ASP.NET MVC 5 |
+| **Database**        | Microsoft SQL Server 2017 |
+| **Tools**           | Visual Studio 2017, Notepad++ |
+| **Version Control** | Git & GitHub |
 
 ---
 
 ## 💻 System Requirements
 
-| **Component** | **Minimum Specs**           |
-| ------------- | --------------------------- |
-| **Processor** | Intel Core i5               |
-| **RAM**       | 4 GB                        |
-| **Storage**   | 500 MB                      |
-| **OS**        | Windows 7/10/11             |
+| **Component** | **Minimum Specs** |
+| ------------- | ----------------- |
+| **Processor** | Intel Core i5 |
+| **RAM**       | 4 GB |
+| **Storage**   | 500 MB |
+| **OS**        | Windows 7/10/11 |
 | **IDE**       | Visual Studio 2017 or above |
 
 ---
 
 ## 🗃 Database Schema
+The database is implemented using **Entity Framework Code-First**.  
+Tables include:
+- Users
+- Jobs
+- Categories
+- Resumes
+- Blogs
+- Feedback
 
-The project uses **Entity Framework Code-First Approach**.
-Main entities:
-
-* **User** (Admin, Employer, Job Seeker)
-* **Job**
-* **Job Category**
-* **Resume**
-* **Blog**
-* **Feedback**
+![Database Schema](docs/diagrams/database-schema.png)
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. **Clone Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/job-shop.git
-   cd job-shop
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/job-shop.git
+cd job-shop
