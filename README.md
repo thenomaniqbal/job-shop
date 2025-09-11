@@ -25,12 +25,7 @@ It provides a seamless platform where employers can **post jobs**, and job seeke
 - [System Requirements](#-system-requirements)
 - [Database Schema](#-database-schema)
 - [Setup Instructions](#-setup-instructions)
-- [Usage](#-usage)
-- [Future Enhancements](#-future-enhancements)
-- [Screenshots](#-screenshots)
-- [References](#-references)
-- [Acknowledgments](#-acknowledgments)
-- [License](#-license)
+- [Documentation](#-documentation)
 
 ---
 
@@ -90,12 +85,7 @@ The system is divided into three roles:
    - Posts jobs, manages applicants, and downloads resumes.
 
 3. **Job Seeker**  
-   - Searches jobs, uploads resumes, applies for positions.
-<p align="center">
-  <img src="images/usecase.png" alt="usecase" width="80%" height="320">
-</p>  
-                                         <p align="center"> <b>Figure 1. Use Case Diagram</b> </p>      
-![Architecture Diagram](images/system-architecture.png)
+   - Searches jobs, uploads resumes, applies for positions. 
 
 ---
 
@@ -133,7 +123,10 @@ The system is divided into three roles:
 6. **Blog Management**
 7. **Feedback Submission**
 
-![Use Case Diagram](images/use-case-diagram.png)
+<p align="center">
+  <img src="Images/usecase.PNG" alt="usecase" >
+</p>  
+                                         <p align="center"> <b>Use Case Diagram</b> </p>      
 
 ---
 
@@ -146,14 +139,15 @@ The ERD defines relationships between entities such as:
 - Blogs
 - Feedback
 
-![ER Diagram](images/er-diagram.png)
+<p align="center">
+  <img src="Images/erdiagram.PNG" alt="usecase" >
+</p>  
+                                         <p align="center"> <b>ER Diagram</b> </p>  
 
 ---
 
 ## 🔄 Activity Diagram
 The activity flow of the system, from registration to job application and admin actions.
-
-![Activity Diagram](images/activity-diagram.png)
 
 ---
 
@@ -224,8 +218,6 @@ Tables include:
 - Blogs
 - Feedback
 
-![Database Schema](images/database-schema.png)
-
 ---
 
 ## ⚙️ Setup Instructions
@@ -234,3 +226,9 @@ Tables include:
 ```bash
 git clone https://github.com/yourusername/job-shop.git
 cd job-shop
+
+---
+
+## 💻 Documentation
+
+Available upon Request
