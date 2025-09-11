@@ -206,7 +206,10 @@ Results showed smooth, error-free operation under expected workloads.
 | **OS**        | Windows 7/10/11 |
 | **IDE**       | Visual Studio 2017 or above |
 
+
 ---
+
+
 
 ## 🗃 Database Schema
 The database is implemented using **Entity Framework Code-First**.  
@@ -218,7 +221,10 @@ Tables include:
 - Blogs
 - Feedback
 
+
 ---
+
+
 
 ## ⚙️ Setup Instructions
 
@@ -227,7 +233,10 @@ Tables include:
 git clone https://github.com/yourusername/job-shop.git
 cd job-shop
 
+
 ---
+
+
 
 ## 💻 Documentation
 
